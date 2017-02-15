@@ -68,7 +68,7 @@ local function list_plugins(only_enabled)
      -- text = text..v..'  '..status..'\n'
     end
   end
-  local text = text.."\n_🔃All Plugins Reloaded_\n\n"..nact.." *✔️Plugins Enabled*\n"..nsum.." *📂Plugins Installed*\n\n@BeyondTeam"
+  local text = text.."\n_🔃All Plugins Reloaded_\n\n"..nact.." *✔️Plugins Enabled*\n"..nsum.." *📂Plugins Installed*\n"
 return text
 end
 
@@ -213,17 +213,17 @@ return {
           },
       sudo = {
           "!plist : list all plugins.",
-          "!pl + [plugin] : enable plugin.",
-          "!pl - [plugin] : disable plugin.",
-          "!pl * : reloads all plugins." },
+          "!p + [plugin] : enable plugin.",
+          "!p - [plugin] : disable plugin.",
+          "!p * : reloads all plugins." },
           },
   patterns = {
     "^[!/#]plist$",
-    "^[!/#](pl) (+) ([%w_%.%-]+)$",
-    "^[!/#](pl) (-) ([%w_%.%-]+)$",
-    "^[!/#](pl) (+) ([%w_%.%-]+) (chat)",
-    "^[!/#](pl) (-) ([%w_%.%-]+) (chat)",
-    "^!pl? (*)$",
+    "^[!/#](p) (+) ([%w_%.%-]+)$",
+    "^[!/#](p) (-) ([%w_%.%-]+)$",
+    "^[!/#](p) (+) ([%w_%.%-]+) (chat)",
+    "^[!/#](p) (-) ([%w_%.%-]+) (chat)",
+    "^!p? (*)$",
     "^[!/](reload)$"
     },
   run = run
