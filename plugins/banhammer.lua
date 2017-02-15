@@ -800,7 +800,7 @@ data[tostring(chat)]['is_silent_users'][tostring(matches[2])] = nil
         end
      end
 		if matches[1]:lower() == 'clean' or matches[1]:lower() == 'حذف' and is_sudo(msg) then
-			if matches[2] == 'gbans' or matches[2] == 'جی بن' then
+			if matches[2] == 'gbans' or matches[2] == 'جی بن ها' then
 				if next(data['gban_users']) == nil then
     if not lang then
 					return "_No_ *globally banned* _users available_"
