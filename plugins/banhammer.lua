@@ -621,7 +621,7 @@ return tdcli.sendMessage(msg.to.id, msg.id, 0, "*کاربر "..matches[2].." ا�
       end
    end
    if msg.to.type ~= 'pv' then
- if matches[1] == "ban" or if matches[1] == "بن" and is_mod(msg) then
+ if matches[1] == "ban" or matches[1] == "بن" and is_mod(msg) then
 if not matches[2] and msg.reply_id then
     tdcli_function ({
       ID = "GetMessage",
