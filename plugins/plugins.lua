@@ -159,7 +159,7 @@ local function run(msg, matches)
   end
 end
   -- Re-enable a plugin for this chat
-   if matches[1] == 'pl' then
+   if matches[1] == 'p' then
   if matches[2] == '+' and matches[4] == 'chat' then
       if is_momod(msg) then
     local receiver = msg.chat_id_
